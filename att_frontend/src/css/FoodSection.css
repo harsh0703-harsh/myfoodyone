@@ -1,0 +1,117 @@
+.food_items{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-bottom: 10rem;
+}
+
+a{
+    text-decoration: none ;
+    color: black;
+
+}
+.food{
+    margin: 20px;
+    background-color: rgb(219, 216, 209);
+    height: 31em;
+    width: 20rem;
+    transition: all .3s ease-out;
+    font-size: 14px;
+    border-radius:1.5rem;
+}
+.food_picture{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    border-radius:1.5rem;
+    width: 100%;
+    background-position: bottom;
+}
+
+.food_Heading{
+    padding-top: 0em ;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+text-align: left;
+color: rgb(91, 91, 168);
+    text-transform:capitalize;
+
+}
+.mid-two-info{   
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+}
+ .rank-tag{
+     background-color: rgb(63, 107, 189);
+     width: 50%;
+     text-align: right;
+    padding-right: 4rem;
+    padding-top: 0.4rem;
+     font-size:2rem ;
+     clip-path: polygon(41% 0, 100% 0%, 100% 100%, 32% 100%, 0 50%);
+     
+    }
+.food_price{
+ padding-left: 2rem;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.rank-tag span{
+  color: #fff;
+} 
+
+
+.food:hover{
+    box-shadow: 2px 3px 23px rgb(118, 129, 194);
+    color: red;
+}
+
+.food-loader{
+    display: flex;
+    justify-content: center;
+    height: 60%;
+}
+
+@media screen and (max-width:956px){
+    .food{
+        margin: 8px;
+        background-color: rgb(219, 216, 209);
+        height:fit-content;
+        width: 9rem;
+        transition: all .3s ease-out;
+        font-size: 12px;
+        border-radius:1.5rem;
+    }
+    .food_picture{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: red;
+        height: 12rem;
+        border-radius:1.5rem;
+        width: 100%;
+        background-position: bottom;
+    }
+    .mid-two-info{   
+        display: flex;
+        justify-content: space-around;
+        height: 3rem;
+    }
+    .rank-tag{
+        background-color: rgb(63, 107, 189);
+        width: 50%;
+        text-align: right;
+       padding-right: 1rem;
+       padding-top: 0.7rem;
+        font-size:1rem ;
+        clip-path: polygon(41% 0, 100% 0%, 100% 100%, 32% 100%, 0 50%);
+        
+       }
+       .food_price{
+        padding-left: 0.7rem;
+        padding-top: 0.6rem;
+           width: 50%;
+           font-size: 1.3rem;
+       }
+}

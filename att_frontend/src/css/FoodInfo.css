@@ -1,0 +1,132 @@
+.main-info-food{
+padding: 2rem;
+}
+.food-full-info{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+}
+.food-pic-info{
+height: 100%;
+width: 50%;
+background-position: top;
+box-shadow:4px 6px 14px rgb(16, 16, 24);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 0.5rem;
+margin-right: 0rem;
+}
+.food-content{
+    width:70%;
+  
+    margin-left: 2rem;
+}
+.food-name-style{
+    letter-spacing: 0.7rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+}
+.ANFCaksnSNCKA{
+    border-top: none;
+    margin-top: 1rem;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(5, 2, 2,0.3);
+}
+.BFDAdjsKNDLV{
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    
+}
+.BFDAdjsKNDLV span{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.location-mapper{
+  margin-top: 1.6rem;
+  display: flex;
+  
+
+}
+.jkcVSKDNVsvcnds{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+.contentCNAKSDsdnkvs{
+    margin-top: 2rem;
+    margin-right: 22rem;
+}
+.mapper-only{
+    width: 40%;
+    height: 70vh;
+    border-top: none;
+    border-right:  1px solid rgb(5, 2, 2,0.3);
+    border-left: none;
+    padding: 1rem;
+}
+.recommended-area{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: auto;
+
+}
+
+@media only screen and (max-width:945px) {
+    .food-full-info{
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+    }
+    .food-pic-info{
+        height: 100%;
+        width: 100%;
+        background-position: top;
+        box-shadow:4px 6px 14px rgb(16, 16, 24);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0.5rem;
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+        }
+        .ANFCaksnSNCKA{
+            border-top: none;
+            margin-top: 1rem;
+            border-right: none;
+            border-left: none;
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 1px solid rgb(5, 2, 2,0.3);
+        }
+        .btn{
+            margin-left: 12rem;
+            margin-bottom: 1rem;
+        }
+        .jkcVSKDNVsvcnds{
+            display: none;
+            justify-content: center;
+            font-size: 1.7rem;
+        }
+        .location-mapper{
+            display: flex;
+            flex-direction: column;
+        }
+        .mapper-only{
+            width: 100%;
+        }
+        .recommended-area{
+            width: 100%;
+            margin-top: 1rem;
+            margin-left: 0rem;
+            display: flex;
+            flex-flow: row nowrap;
+            overflow: auto;
+        
+        }
+}

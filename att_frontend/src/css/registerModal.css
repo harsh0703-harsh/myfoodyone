@@ -1,0 +1,201 @@
+.main-prim-p{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-prim-p2{
+   
+    margin: auto;
+    width:30%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: rgb(28 28 28 / 15%) 0px 1.2rem 7rem;
+    transition: transform 0.25s ease 0s;
+    animation: popup 2s;
+}
+.frIcjp{
+    width: calc(100% + 0.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+h2{
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btYpry{
+    max-height: 3rem;
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-info{
+    padding: 1rem;
+}
+.put-info{
+    border-radius:0.5rem ;
+    width: 100%;
+    padding: 0.4rem;
+}
+.i-agree{
+    padding: 1.1rem;
+    display: flex;
+  font-size: 1rem;
+}
+.check-it{
+    margin-top: 0.1rem;
+    margin-right: 1rem;
+}
+input[type="checkbox"]{
+    width: 20px; /*Desired width*/
+    height: 20px; /*Desired height*/
+  }
+.create-account{
+    width: 100%;
+    height: 50px;
+    border-radius: 0.5rem;
+    background-color: rgb(79, 79, 175);
+    color: white;
+    font-size: 1.4rem;
+}
+.main-info-or{
+    position: relative;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 1.2rem 4rem 2rem 0rem;
+}
+.straight-line{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    width: 100%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+}
+.czdGdx{
+    position: absolute;
+    padding: 0.1rem 0.6rem 0.5rem 0.5rem;
+    background: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(105, 105, 105);
+}
+.google-div{
+    width: 100%;
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    justify-content: center;
+    background-color:white;
+}
+.icon-section{
+    width: 20%; 
+    font-size: 2rem;
+    color: rgb(196, 73, 24);
+}
+.icon-title{
+font-size: 1.8rem;
+
+}
+.redirect{
+    color: red;
+    font-size: 1.4rem;
+}
+.account-not{
+    font-size: 1.6rem;
+   
+}
+
+@keyframes popup {
+    0% {
+        transform: translateY(-100px);
+        
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+@media only screen and (max-width:1469px){
+    .main-prim-p2{
+   
+        width: max-content;
+        margin: auto;
+        width: 50%;
+        background-color: white;
+        padding: 1.4rem;
+        min-height: 150px;
+        min-width: 20rem;
+        border-radius: 0.6rem;
+        transform: scale(1);
+        box-shadow: rgb(28 28 28 / 15%) 0px 1.2rem 7rem;
+        transition: transform 0.25s ease 0s;
+        animation: popup 2s;
+    }
+}
+@media only screen and (max-width:956px){
+    .main-prim-p2{
+   
+        width: max-content;
+        margin: auto;
+        width: 100%;
+        background-color: white;
+        padding: 1.4rem;
+        min-height: 150px;
+        min-width: 20rem;
+        border-radius: 0.6rem;
+        transform: scale(1);
+        box-shadow: rgb(28 28 28 / 15%) 0px 1.2rem 7rem;
+        transition: transform 0.25s ease 0s;
+        animation: popup 2s;
+    }
+    .frIcjp{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .icon-section{
+        width: 20%; 
+        font-size: 2rem;
+    }
+    .icon-title{
+        font-size: 1.5rem;
+        }
+    .input[type="checkbox"]{
+        width: 20px; /*Desired width*/
+        height: 20px; /*Desired height*/
+      }
+    input[type="checkbox"]{
+        width: 60px; /*Desired width*/
+        height: 20px; /*Desired height*/
+      }
+}

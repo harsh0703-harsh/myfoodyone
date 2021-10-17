@@ -1,0 +1,224 @@
+ 
+.main-prim{
+    background-color: rgb(208, 209, 203);
+    height: 9em;
+    display: flex;
+    justify-content: center;
+      
+}
+
+.main-sub-one{
+    background-color: white;
+    font-size: 1.8em;
+    padding: 1em;
+    text-align: center;
+    padding-right: 12rem;
+    width: 30%;
+    height: 85%;
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0 100%);
+    animation: moveRight ease-out 1s ;
+}
+
+.main-sub-two{
+    background-color:rgb(255, 255, 255);
+    font-size: 1.4em;
+    padding: 0.4em 5em;
+    text-align: center;
+    width: 70%;
+    height: 85%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 4.1% 100%);
+    animation: moveLeft ease-out 1s ;
+    display: flex;
+    flex-direction: column wrap ;
+
+}
+
+.main-sub-contact i{
+    font-size: 1em;
+    padding: 0 1em;
+    margin: 1em; 
+    color: blue;
+
+    
+}
+#contact-1{
+    display: block;
+    text-align: center;
+    font-family:"Georgia, 'Times New Roman', Times, serif";
+    font-size: 40px;
+    margin: 0.7em;
+  }
+
+.main-header-primary-contact{
+display:flex;
+flex-direction:row ;
+
+}
+
+.header-primary-contact{
+    width: 50%;
+    height: 84vh;
+    margin: 3em 3em;
+  
+}
+.header-primary-contact input{
+    margin: 1em ;
+    padding: 1em 2em;
+    width:40%;
+    border:none;
+    border-bottom:2px solid silver; 
+}
+input:focus{
+    border:none;
+}
+.message-area{
+    width:80%;
+    height: 33rem;
+    padding: 1rem;
+    word-spacing: 0.2rem;
+    font-family:"Georgia, 'Times New Roman', Times, serif"; 
+    font-size: 1em;
+    margin:1em 1em;
+    border:none;
+    border-bottom:2px solid silver; 
+    border-left:2px solid silver; 
+}
+
+.header-primary-contact button{
+    margin: 0.2em 9em 2em ;
+    border-radius: 100px;
+    width: 18rem;
+    height: 3em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #6565ff;
+    transition: all .2s;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+}
+.header-primary-contact button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0,0,0,.2);
+
+}
+
+.header-primary-contact button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0,0,0,.2);
+}
+.header-primary-contact-2{
+   display: block;
+    border:none ;
+    height: 35em;
+    border-left: rgb(0, 0, 0,0.2) 1px solid;
+    margin: 0em 4em  ;
+    padding: 1em ;
+    font-size: 18px;
+    width:35%
+}
+
+.contact-elements{
+    display: flex;
+    flex-direction: row nowrap;
+    font-size: 1.3em;
+    margin: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0,0.2);
+}
+.contact-elements i{
+    padding: 1em;
+    color: rgb(3, 3, 5);
+}
+/* KeyFrames Animations */ 
+
+@keyframes moveRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    
+}
+@keyframes moveLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    10%{
+        opacity: 1;
+    }
+  
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    
+}
+
+@media only screen and (max-width:550px) {
+/*     .main-sub-two{
+        flex-direction: column ;
+    } */
+    .main-sub-one{
+        font-size: 17px;
+        text-align: center;
+        padding: 1.3em 0 ;
+    }
+    .main-sub-two{
+        font-size: 1em;
+        display: block;
+        padding: 0 0 0 1em;
+
+    }
+    .main-prim{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+
+    .header-primary-contact-2{
+        margin:8em 1.2em 0 1em ; 
+        font-size: 17px;
+    }
+    .main-header-primary-contact{
+        flex-direction:column;
+        width: 100%;
+    }
+    .header-primary-contact{
+        width: 100%;
+        margin: 1em 0.4em 4em 0em;
+    }
+   .message-area{
+    width:93%;
+    padding: 0em;
+    height: 300px;
+    font-family:"Georgia, 'Times New Roman', Times, serif"; 
+    font-size: 1em;
+    margin:3em 1em;
+    border:none;
+    border-bottom:2px solid silver; 
+    border-left:2px solid silver; 
+   }
+   .header-primary-contact button{
+    margin: 0em 1em 0.3em ;
+    border-radius: 100px;
+    width: 18rem;
+    height: 3em;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #6565ff;
+    transition: all .2s;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+ 
+   }
+    }

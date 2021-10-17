@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.header-primary{
+    display: flex;
+    flex-direction: column;
+    height: 81vh;
+    width: 100%;
+    background-image: url("../images/background_third.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+    padding-top: 4em;
+    backface-visibility: hidden;
+    transition: all ;
+    line-height: 1.3;
+    
+}
+.header-primary-main{
+    display: block;
+    font-size: 3rem;
+    text-align: left;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.2rem;
+    margin: 2.2rem;
+   animation : moveRight ease-out 2s;
+   padding-left: 2em;
+}
+.header-primary-sub{
+    display: block;
+    padding-left: 1em;
+    margin:2.2em;
+    font-size: 2.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    animation:subelement 2s ease-out;
+ 
+
+}
+
+.menu-primary{
+   font-size: 2em;
+    width: max-content;
+    margin: 2em 18em !important;
+    display:inline-block;
+    padding: 2rem;
+    color:rgb(253, 253, 253);
+    border: none;
+    text-align: center;
+    background-color: rgb(165, 165, 52);
+    animation:moveButton ease-out 1.5s;
+}
+.page-menu-bar{
+    display: flex;
+    color: black;
+    margin: 0.7em;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    }
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes subelement{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveButton{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    
+@media screen and (max-width:956px){
+    .menu-primary{
+        margin: 1em auto  !important;
+        font-size: 1.9em;
+}
+.header-primary-sub,.header-primary-main{
+    padding: 0.5em;
+    margin: 0.1em;
+    padding-top: 0.5em;
+    text-align: center;
+    width: 100%;
+    font-size: 2.4em;
+}
+.page-menu-bar{
+    font-size: 2rem;
+}
+.header-primary{
+ 
+    margin-left:0.11rem;
+}
+}
